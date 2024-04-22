@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Rancho";
+    height: 500vh;
+    background-color: beige;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px; 
+}
+
+.menu > ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #7b5b3c; 
+    display: block;
+    padding: 20px;
+}
+
+.has-sous-nav{
+    position: relative;
+}
+
+.sous-nav{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    width: max-content;
+}
+
+.sous-nav li a:hover{
+    background: #d1b598; 
+}
+
+.has-sous-nav:hover .sous-nav{
+    display: block;
+}
+
+.accueil {
+    margin: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #7b5b3c;
+    display: flex;
+}
+
+.image {
+    width: 50%; 
+    margin: 10px; 
+    text-align: center; 
+}
+
+.image img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+.texte {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    text-align: justify;
+    font-size: 28.5px;
+    color: #d1b598;
+
+}
+
+.texte h1.titre {
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #7b5b3c;
+}
