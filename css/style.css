@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: "Rancho";
     background-color: beige;
 }
 
-img{
+img {
     height: 80px;
     width: 80px;
 }
 
-.menu{
+.menu {
     font-size: 20px;
     position: sticky;
     top: 0;
@@ -27,23 +28,40 @@ img{
     padding: 10px 20px; 
 }
 
-.menu > ul{
+.menu > ul {
     display: flex;
     list-style: none;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     color: #7b5b3c; 
     display: block;
     padding: 20px;
 }
 
-.has-sous-nav{
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.menu-toggle img {
+    width: 100%; 
+    height: auto; 
+}
+
+.menu-toggle.hide {
+    display: none; 
+}
+
+.has-sous-nav {
     position: relative;
 }
 
-.sous-nav{
+.sous-nav {
     list-style: none;
     display: none;
     position: absolute;
@@ -53,11 +71,11 @@ img{
     width: max-content;
 }
 
-.sous-nav li a:hover{
+.sous-nav li a:hover {
     background: #d1b598; 
 }
 
-.has-sous-nav:hover .sous-nav{
+.has-sous-nav:hover .sous-nav {
     display: block;
 }
 
@@ -81,7 +99,6 @@ img{
     height: auto; 
 }
 
-
 .texte {
     flex: 1;
     display: flex;
@@ -90,7 +107,6 @@ img{
     text-align: justify;
     font-size: 15px;
     color: #d1b598;
-
 }
 
 .texte h1.titre {
@@ -98,8 +114,6 @@ img{
     margin-bottom: 20px; 
     color: #7b5b3c;
 }
-
-
 
 #footer {
     position: fixed;
@@ -113,7 +127,6 @@ img{
     padding: 20px; 
     border-top: 2px solid #d1b598; 
 }
-
 
 .element {
     display: flex;
@@ -135,8 +148,6 @@ img{
     color: #d1b598; 
 }
 
-
-
 .accueil {
     display: flex;
     flex-direction: column;
@@ -153,8 +164,41 @@ img{
     width: 100%;
 }
 
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+
+@media screen and (min-width: 769px) {
+    .menu-toggle {
+        display: none; 
+    }
+}
+
 
 @media screen and (max-width: 768px) {
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu ul.show {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .menu ul.show li {
+        margin-bottom: 10px;
+    }
+*/
     .element {
         flex-direction: column; 
     }
