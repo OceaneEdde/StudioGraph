@@ -180,12 +180,12 @@ img {
     }
 }
 
-
 @media screen and (max-width: 768px) {
 
     .menu ul {
         display: none;
     }
+
 
     .menu ul.show {
         display: flex;
@@ -198,13 +198,14 @@ img {
     .menu ul.show li {
         margin-bottom: 10px;
     }
-*/
+
+    /* Ajustement de la disposition des éléments */
     .element {
         flex-direction: column; 
     }
 
     .element .image,
     .element .texte {
-        width: 100%; 
+        width: 100%; /* Assurez-vous que ces styles sont appliqués correctement */
     }
 }
