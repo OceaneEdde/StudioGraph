@@ -88,7 +88,7 @@ img{
     flex-direction: column;
     justify-content: flex-start; 
     text-align: justify;
-    font-size: 28.5px;
+    font-size: 15px;
     color: #d1b598;
 
 }
@@ -112,4 +112,55 @@ img{
     background-color: white;
     padding: 20px; 
     border-top: 2px solid #d1b598; 
+}
+
+
+.element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image, .texte {
+    flex-basis: 45%; 
+}
+
+.image img {
+    width: 100%; 
+}
+
+.texte {
+    text-align: justify;
+    font-size: 16px; 
+    color: #d1b598; 
+}
+
+
+
+.accueil {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.image {
+    width: 100%; 
+}
+
+.texte {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .element {
+        flex-direction: column; 
+    }
+
+    .element .image,
+    .element .texte {
+        width: 100%; 
+    }
 }
