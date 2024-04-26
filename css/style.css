@@ -209,3 +209,40 @@ img {
         width: 100%; /* Assurez-vous que ces styles sont appliqués correctement */
     }
 }
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Centrer tout le contenu à l'intérieur de .product */
+}
+
+.product img {
+    display: block; /* Assurez-vous que l'image est affichée en tant que bloc */
+    margin: 0 auto 10px; /* Centre l'image horizontalement avec une marge en bas */
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product button {
+    background-color: #d1b598;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #6e5b46;
+}
